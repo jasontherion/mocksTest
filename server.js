@@ -34,6 +34,10 @@ app.get('/api/data', (req, res) => {
   }
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello from my Node.js app on Vercel!');
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
@@ -41,7 +45,7 @@ app.use((err, req, res, next) => {
  });
 });
 
+const port = process.env.PORT || 3000;
 app.listen(port, () => {
-  console.log(`Server   
- listening on port ${port}`);
+  console.log(`Server listening on port ${port}`);
 });
