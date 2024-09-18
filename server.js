@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-  res.json(req);
+  res.json(req.body);
 });
 
 // Error handling middleware
