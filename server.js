@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
+app.post('/', (req, res) => {
+  res.json(req.body);
+});
+
 // Error handling middleware
 app.use((err, req, res, next) => {
   console.error(err.stack);
