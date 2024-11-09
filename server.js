@@ -29,6 +29,10 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
+app.post('/test-post', (req, res) => {
+  res.json(req.body);
+});
+
 app.post('/', (req, res) => {
   res.json(req.body);
 });
