@@ -30,8 +30,14 @@ app.get('/', (req, res) => {
 });
 
 app.post('/test-post', (req, res) => {
+  // Simulamos un error al recibir un parámetro específico en el body
+  const parametroError = req.body.parametroError; 
+  if (parametroError) {
+    throw new Error('Error simulado al recibir el parámetro "parametroError"');
+  }
   res.json(req.body);
 });
+
 
 app.post('/', (req, res) => {
   res.json(req.body);
