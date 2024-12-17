@@ -67,7 +67,7 @@ app.post('/bsl/api/query', (req, res) => {
   "plate": "ABC123",
   "transactionType": "Pago",
   "amount": 150.75,
-  "tollTransactionCode": "TTC987654",
+  "tollTransactionCode": "10045_04efef08-7ebe-4892-b5b0-18f8d772bf0btest",
   "accountId": "ACC123456789",
   "personId": "PID123456789",
   "email": "example@example.com",
