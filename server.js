@@ -73,7 +73,7 @@ app.post('/bsl/api/query', (req, res) => {
   "email": "example@example.com",
   "names": "Juan",
   "secondName": "Pérez",
-  "documentType": "CC",
+  "documentType": "2",
   "telephone": "3001234567",
   "addressLine": "Calle Falsa 123",
   "cityID": "11001"
