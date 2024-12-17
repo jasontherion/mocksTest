@@ -29,6 +29,38 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
+app.get('/bsl/api/query`', (req, res) => {
+  res.json({
+  "cuentaFacilpass": "123456789",
+  "placa": "ABC123",
+  "categoria": "C2",
+  "adicional": "Info adicional",
+  "idTag": "TAG987654",
+  "idTransaccion": "TRX123456",
+  "idTransaccionEstablecimiento": "EST789012",
+  "establecimiento": "Peaje Las Palmas",
+  "puntoDeServicio": "Estación Norte",
+  "carril": "01",
+  "sentido": "Norte-Sur",
+  "valorTransaccion": "15000",
+  "email": "usuario@ejemplo.com",
+  "codTransaccion": "3",
+  "tipoTransaccion": "TOLL",
+  "detalle": "Paso vehicular regular",
+  "nure": "NURE123456",
+  "nitEstablecimiento": "900123456",
+  "nitCliente": "123456789",
+  "contratoNo": "CNT-2024-001",
+  "modalidad": "Prepago",
+  "nombres": "Juan Carlos",
+  "segundoNombre": "Alberto",
+  "tipoDocumento": "CC",
+  "telefono": "3001234567",
+  "direccion": "Calle 123 # 45-67",
+  "codigoCiudad": "11001"
+});
+});
+
 app.post('/test-post', (req, res) => {
   // Simulamos un error al recibir un parámetro específico en el body
 
