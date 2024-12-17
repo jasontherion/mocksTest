@@ -30,7 +30,7 @@ app.get('/', (req, res) => {
 });
 
 app.post('/bsl/api/query', (req, res) => {
-  res.json({
+  res.json([{
   "cuentaFacilpass": "123456789",
   "placa": "ABC123",
   "categoria": "C2",
@@ -58,7 +58,7 @@ app.post('/bsl/api/query', (req, res) => {
   "telefono": "3001234567",
   "direccion": "Calle 123 # 45-67",
   "codigoCiudad": "11001"
-});
+}]);
 });
 
 app.post('/test-post', (req, res) => {
