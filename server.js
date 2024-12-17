@@ -54,7 +54,7 @@ app.post('/bsl/api/query', (req, res) => {
   "modalidad": "Prepago",
   "nombres": "Juan Carlos",
   "segundoNombre": "Alberto",
-  "tipoDocumento": "CC",
+  "tipoDocumento": "2",
   "telefono": "3001234567",
   "direccion": "Calle 123 # 45-67",
   "codigoCiudad": "11001"
