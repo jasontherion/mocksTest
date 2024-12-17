@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
-app.get('/bsl/api/query`', (req, res) => {
+app.post('/bsl/api/query`', (req, res) => {
   res.json({
   "cuentaFacilpass": "123456789",
   "placa": "ABC123",
