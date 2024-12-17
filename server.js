@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
-app.post('/bsl/api/query', (req, res) => {
+app.post('/bsl/api/query2', (req, res) => {
   res.json([{
   "cuentaFacilpass": "123456789",
   "placa": "ABC123",
@@ -60,6 +60,26 @@ app.post('/bsl/api/query', (req, res) => {
   "codigoCiudad": "11001"
 }]);
 });
+
+app.post('/bsl/api/query', (req, res) => {
+  res.json([{
+  "tollReferenceCode": "TRC123456",
+  "plate": "ABC123",
+  "transactionType": "Pago",
+  "amount": 150.75,
+  "tollTransactionCode": "TTC987654",
+  "accountId": "ACC123456789",
+  "personId": "PID123456789",
+  "email": "example@example.com",
+  "names": "Juan",
+  "secondName": "Pérez",
+  "documentType": "CC",
+  "telephone": "3001234567",
+  "addressLine": "Calle Falsa 123",
+  "cityID": "11001"
+}]);
+});
+
 
 app.post('/test-post', (req, res) => {
   // Simulamos un error al recibir un parámetro específico en el body
