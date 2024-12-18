@@ -63,7 +63,7 @@ app.post('/bsl/api/query2', (req, res) => {
 
 app.post('/bsl/api/query', (req, res) => {
   res.json([{
-  "tollReferenceCode": "TRC123456",
+  "tollReferenceCode": "10172_000000006667770002038",
   "plate": "ABC123",
   "transactionType": "Pago",
   "amount": 150.75,
