@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
-app.post('/bsl/api/query2', (req, res) => {
+app.post('/bsl/api/query', (req, res) => {
   res.json([{
   "cuentaFacilpass": "123456789",
   "placa": "ABC123",
@@ -61,7 +61,7 @@ app.post('/bsl/api/query2', (req, res) => {
 }]);
 });
 
-app.post('/bsl/api/query', (req, res) => {
+app.post('/bsl/api/query3', (req, res) => {
   res.json([{
   "tollReferenceCode": "10172_000000006667770002038",
   "plate": "ABC123",
