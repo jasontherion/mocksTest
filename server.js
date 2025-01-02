@@ -63,20 +63,20 @@ app.post('/bsl/api/query2', (req, res) => {
 
 app.post('/bsl/api/query', (req, res) => {
   res.json([{
-  "tollReferenceCode": "10172_000000006667770002038",
-  "plate": "ABC123",
-  "transactionType": "Pago",
-  "amount": 150.75,
-  "tollTransactionCode": "10045_04efef08-7ebe-4892-b5b0-18f8d772bf0btest",
-  "accountId": "ACC123456789",
-  "personId": "PID123456789",
-  "email": "example@example.com",
-  "names": "Juan",
-  "secondName": "Pérez",
-  "documentType": "2",
-  "telephone": "3001234567",
-  "addressLine": "Calle Falsa 123",
-  "cityID": "11001"
+  NAMES: "Juan",
+  TELEPHONE: "3001234567",
+  SECONDNAME: "Pérez",
+  CITYID: "11001",
+  DOCUMENTTYPE: "2",
+  EMAIL: "example@example.com",
+  TRANSACTION_TYPE: "Pago",
+  ADDRESSLINE: "Calle Falsa 123",
+  TOLL_TRANSACTION_CODE: "10045_04efef08-7ebe-4892-b5b0-18f8d772bf0btest",
+  TOLL_REFERENCE_CODE: "10172_000000006667770002038",
+  AMOUNT: "150.75", // Convertido a string
+  ACCOUNTID: "123",
+  NITCLIENTE: "PID123456789", // Asumiendo que NITCLIENTE se refiere a un identificador personal
+  PLATE: "ABC123"
 }]);
 });
 
