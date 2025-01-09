@@ -29,39 +29,26 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
-app.post('/bsl/api/query2', (req, res) => {
+app.post('/bsl/api/query', (req, res) => {
   res.json([{
-  "cuentaFacilpass": "123456789",
-  "placa": "ABC123",
-  "categoria": "C2",
-  "adicional": "Info adicional",
-  "idTag": "TAG987654",
-  "idTransaccion": "TRX123456",
-  "idTransaccionEstablecimiento": "EST789012",
-  "establecimiento": "Peaje Las Palmas",
-  "puntoDeServicio": "Estación Norte",
-  "carril": "01",
-  "sentido": "Norte-Sur",
-  "valorTransaccion": "15000",
-  "email": "usuario@ejemplo.com",
-  "codTransaccion": "3",
-  "tipoTransaccion": "TOLL",
-  "detalle": "Paso vehicular regular",
-  "nure": "NURE123456",
-  "nitEstablecimiento": "900123456",
-  "nitCliente": "123456789",
-  "contratoNo": "CNT-2024-001",
-  "modalidad": "Prepago",
-  "nombres": "Juan Carlos",
-  "segundoNombre": "Alberto",
-  "tipoDocumento": "2",
-  "telefono": "3001234567",
-  "direccion": "Calle 123 # 45-67",
-  "codigoCiudad": "11001"
-}]);
+        "NAMES": "TRANSPORTADORA DEL META SAS",
+        "TELEPHONE": "3176653940",
+        "SECONDNAME": "JULIO CESAR PUENTES MONTAÑO",
+        "CITYID": "11001",
+        "DOCUMENTTYPE": "3",
+        "EMAIL": "ana.cifuentes@transmeta.com.com",
+        "TRANSACTION_TYPE": "4",
+        "ADDRESSLINE": "CALLE 22D # 120 - 40",
+        "TOLL_TRANSACTION_CODE": "10045_9ee69d61-41a6-4a6e-af39-93e3a8a44195",
+        "TOLL_REFERENCE_CODE": "10045_8067",
+        "AMOUNT": "10",
+        "ACCOUNTID": "8333",
+        "NITCLIENTE": "8220066055",
+        "PLATE": "SOP848"
+    }]);
 });
 
-app.post('/bsl/api/query', (req, res) => {
+app.post('/bsl/api/query2', (req, res) => {
   res.json([{
   NAMES: "Juan",
   TELEPHONE: "3001234567",
