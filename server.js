@@ -29,7 +29,7 @@ app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
 
-app.post('/bsl/api/query', (req, res) => {
+app.post('/bsl/api/query3', (req, res) => {
   res.json([{
         "NAMES": "TRANSPORTADORA DEL META SAS",
         "TELEPHONE": "3176653940",
@@ -48,7 +48,7 @@ app.post('/bsl/api/query', (req, res) => {
     }]);
 });
 
-app.post('/bsl/api/query2', (req, res) => {
+app.post('/bsl/api/query', (req, res) => {
   res.json([{
   NAMES: "Juan",
   TELEPHONE: "3001234567",
