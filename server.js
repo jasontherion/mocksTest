@@ -48,7 +48,7 @@ app.post('/bsl/api/query3', (req, res) => {
     }]);
 });
 
-app.post('/bsl/api/query', (req, res) => {
+app.post('/v1/query', (req, res) => {
   res.json([{
   NAMES: "Juan",
   TELEPHONE: "3001234567",
