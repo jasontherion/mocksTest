@@ -62,7 +62,7 @@ app.post('/v1/query', (req, res) => {
   TOLL_REFERENCE_CODE: "10172_000000006667770002038",
   AMOUNT: "150.75", // Convertido a string
   ACCOUNTID: "123",
-  NITCLIENTE: "PID123456789", // Asumiendo que NITCLIENTE se refiere a un identificador personal
+  NITCLIENTE: "9000856301", // Asumiendo que NITCLIENTE se refiere a un identificador personal
   PLATE: "ABC123"
 }]);
 });
