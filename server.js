@@ -68,10 +68,27 @@ app.post('/v1/query', (req, res) => {
 });
 
 
-app.post('/test-post', (req, res) => {
+app.put('/v1/pasos/10045_000000000405027/solicitarPruebas', (req, res) => {
   // Simulamos un error al recibir un parámetro específico en el body
-
-  res.json(req.body);
+const response = {
+  "count": 2,
+  "code": 200,
+  "data": [
+    {
+      "codigo": "COD123456",
+      "fecha": "2023-11-22T15:30:00",
+      "referencia": "REF-987654"
+    },
+    {
+      "codigo": "COD789012",
+      "fecha": "2023-11-22T15:35:00",
+      "referencia": "REF-345678"
+    }
+  ],
+  "message": "Operación exitosa",
+  "responseTime": "2023-11-22T15:35:00.123Z"
+};
+  res.json(response);
 });
 
 
