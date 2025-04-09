@@ -68,7 +68,7 @@ app.post('/v1/query', (req, res) => {
 });
 
 
-app.put('/v1/pasos/10045_000000000405027/solicitarPruebas', (req, res) => {
+app.put('/v1/pasos/66666_000000000405027/solicitarPruebas', (req, res) => {
   // Simulamos un error al recibir un parámetro específico en el body
 const response = {
   "count": 2,
