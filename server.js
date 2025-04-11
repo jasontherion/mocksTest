@@ -68,19 +68,20 @@ app.post('/v1/query', (req, res) => {
 });
 
 
-app.put('/v1/pasos/66666_7778/solicitarPruebas', (req, res) => {
+app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
+   const codigoPaso = req.params.codigoPaso;
   // Simulamos un error al recibir un parámetro específico en el body
 const response = {
   "count": 2,
   "code": 200,
   "data": [
     {
-      "codigo": "COD123456",
+      "codigo": codigoPaso,
       "fecha": "2023-11-22T15:30:00",
       "referencia": "REF-987654"
     },
     {
-      "codigo": "COD789012",
+      "codigo": codigoPaso,
       "fecha": "2023-11-22T15:35:00",
       "referencia": "REF-345678"
     }
