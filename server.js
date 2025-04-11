@@ -76,14 +76,14 @@ const response = {
   "code": 200,
   "data": [
     {
-      "codigo": codigoPaso,
+      "codigo": "REF-987654",
       "fecha": "2023-11-22T15:30:00",
-      "referencia": "REF-987654"
+      "referencia": codigoPaso
     },
     {
-      "codigo": codigoPaso,
+      "codigo": "REF-987655",
       "fecha": "2023-11-22T15:35:00",
-      "referencia": "REF-345678"
+      "referencia": codigoPaso
     }
   ],
   "message": "Operación exitosa",
