@@ -74,7 +74,7 @@ app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
 const response = {
   "count": 2,
   "code": 200,
-  "data": [
+  "data": 
     {
       "codigo": "REF-987654",
       "fecha": "2023-11-22T15:30:00",
@@ -85,7 +85,7 @@ const response = {
       "fecha": "2023-11-22T15:35:00",
       "referencia": codigoPaso
     }
-  ],
+  ,
   "message": "Operación exitosa",
   "responseTime": "2023-11-22T15:35:00.123Z"
 };
