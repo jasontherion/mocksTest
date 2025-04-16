@@ -80,12 +80,6 @@ const response = {
       "fecha": "2023-11-22T15:30:00",
       "referencia": codigoPaso
     },
-    {
-      "codigo": "REF-987655",
-      "fecha": "2023-11-22T15:35:00",
-      "referencia": codigoPaso
-    }
-  ,
   "message": "Operación exitosa",
   "responseTime": "2023-11-22T15:35:00.123Z"
 };
