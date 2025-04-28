@@ -83,7 +83,6 @@ app.get('/v1/pasos/:codigoPaso/error/:urlImage', (req, res) => {
        }
      };
      return res.status(400).json(errorResponse);
-   }
 });
 
 
