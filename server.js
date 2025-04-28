@@ -52,6 +52,41 @@ app.get('/v1/pasos/:codigoPaso/pruebas/:urlImage', (req, res) => {
   }
 });
 
+// Service endpoint
+app.get('/v1/pasos/:codigoPaso/error/:urlImage', (req, res) => {
+  // Simulate a potential error (you can customize this based on your needs)
+     const codigoPaso = req.params.codigoPaso;
+     const urlImage = req.params.urlImage;
+     console.log("codigoPaso:", codigoPaso);
+     console.log("image url", urlImage);
+
+
+     const errorResponse = {
+       "level": "DEBUG",
+       "message": "consumeService#error",
+       "service": "TollTransitDownloadController",
+       "timestamp": new Date().toISOString(),
+       "xray_trace_id": "1-680fe6ad-0b9daa5067d3169e2f74080c",
+       "status": 400,
+       "headers": {
+           "content-type": "application/json;charset=UTF-8",
+           "transfer-encoding": "chunked",
+           "date": new Date().toUTCString(),
+           "connection": "close"
+       },
+       "data": {
+           "message": "Prueba de paso no existe.",
+           "count": 0,
+           "responseTime": new Date().toISOString().replace('Z', ''),
+           "data": false,
+           "code": 400
+       }
+     };
+     return res.status(400).json(errorResponse);
+   }
+});
+
+
 app.get('/', (req, res) => {
   res.send('Hello from my Node.js app on Vercel!');
 });
