@@ -70,6 +70,31 @@ app.post('/v1/query', (req, res) => {
 
 app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
    const codigoPaso = req.params.codigoPaso;
+      // Ejemplo: Si el código de paso es inválido o no existe
+   if (!codigoPaso || codigoPaso === 'invalid') {
+     const errorResponse = {
+       "level": "DEBUG",
+       "message": "consumeService#error",
+       "service": "TollTransitDownloadController",
+       "timestamp": new Date().toISOString(),
+       "xray_trace_id": "1-680fe6ad-0b9daa5067d3169e2f74080c",
+       "status": 400,
+       "headers": {
+           "content-type": "application/json;charset=UTF-8",
+           "transfer-encoding": "chunked",
+           "date": new Date().toUTCString(),
+           "connection": "close"
+       },
+       "data": {
+           "message": "Prueba de paso no existe.",
+           "count": 0,
+           "responseTime": new Date().toISOString().replace('Z', ''),
+           "data": false,
+           "code": 400
+       }
+     };
+     return res.status(400).json(errorResponse);
+   }
   // Simulamos un error al recibir un parámetro específico en el body
 const response = {
   "count": 2,
