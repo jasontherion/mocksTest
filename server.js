@@ -158,16 +158,15 @@ app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
    }
   // Simulamos un error al recibir un parámetro específico en el body
 const response = {
-  "count": 2,
-  "code": 200,
-  "data": 
-    {
-      "codigo": "REF-987654",
-      "fecha": "2023-11-22T15:30:00",
-      "referencia": codigoPaso
+    "data": {
+        "codigo": "10045_000000000558599",
+        "fecha": "2025-05-08T10:51:15.112",
+        "referencia": "10045_100210005325996"
     },
-  "message": "Operación exitosa",
-  "responseTime": "2023-11-22T15:35:00.123Z"
+    "message": "Tickect Creado Exitosamente",
+    "responseTime": "2025-05-08T10:51:15.144Z",
+    "count": 1,
+    "code": 200
 };
   res.json(response);
 });
