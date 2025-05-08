@@ -163,10 +163,6 @@ const response = {
         "fecha": "2025-05-08T10:51:15.112",
         "referencia": "66666_00000003006908174628261527512345678900000000000000003"
 
-    "message": "Tickect Creado Exitosamente",
-    "responseTime": "2025-05-08T10:51:15.144Z",
-    "count": 1,
-    "code": 200
 };
   res.json(response);
 });
