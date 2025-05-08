@@ -159,9 +159,9 @@ app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
   // Simulamos un error al recibir un parámetro específico en el body
 const response = {
     "data": {
-        "codigo": "10045_000000000558599",
+        "codigo": "66666_00000003006908174628261527512345678900000000000000002",
         "fecha": "2025-05-08T10:51:15.112",
-        "referencia": "10045_100210005325996"
+        "referencia": "66666_00000003006908174628261527512345678900000000000000003"
     },
     "message": "Tickect Creado Exitosamente",
     "responseTime": "2025-05-08T10:51:15.144Z",
