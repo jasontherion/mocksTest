@@ -157,13 +157,28 @@ app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
      return res.status(400).json(errorResponse);
    }
   // Simulamos un error al recibir un parámetro específico en el body
-const response = {
+/* const response = {
 
         "codigo": "66666_00000003006908174628261527512345678900000000000000012",
         "fecha": "2025-05-08T10:51:15.112",
         "referencia": "66666_00000003006908174628261527512345678900000000000000007"
 
 };
+
+*/
+   const response ={
+    "message": "OK REGISTRO ALMACENADO CORRECTAMENTE",
+    "count": 1,
+    "responseTime": new Date(),
+    "data": {
+        "codigo": "66666_00000003006908174628261527512345678900000000000000012",
+        "fecha": "2025-05-08T10:51:15.112",
+        "referencia": "66666_00000003006908174628261527512345678900000000000000007"
+    },
+    "code": 200
+}
+
+
   res.json(response);
 });
 
