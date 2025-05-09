@@ -159,9 +159,9 @@ app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
   // Simulamos un error al recibir un parámetro específico en el body
 const response = {
 
-        "codigo": "66666_00000003006908174628261527512345678900000000000000011",
+        "codigo": "66666_00000003006908174628261527512345678900000000000000012",
         "fecha": "2025-05-08T10:51:15.112",
-        "referencia": "66666_00000003006908174628261527512345678900000000000000006"
+        "referencia": "66666_00000003006908174628261527512345678900000000000000007"
 
 };
   res.json(response);
