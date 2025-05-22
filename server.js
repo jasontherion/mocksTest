@@ -171,7 +171,7 @@ app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
 }
 
 
-  res.json(response);
+  res.status(400).json(response);
 });
 
 
