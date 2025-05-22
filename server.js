@@ -167,11 +167,20 @@ app.put('/v1/pasos/:codigoPaso/solicitarPruebas', (req, res) => {
 
 */
    const response ={
+    "message": "OK REGISTRO ALMACENADO CORRECTAMENTE",
+    "count": 1,
+    "responseTime": new Date(),
+    "data": {
+        "codigo": "66666_00000003006908174628261527512345678900000000000000016",
+        "fecha": "2025-05-08T10:51:15.112",
+        "referencia": "66666_000000030069081746282615275123456789000000000000000012"
+    },
+    "code": 200
 
 }
 
 
-  res.status(400).json(response);
+  res.json(response);
 });
 
 
