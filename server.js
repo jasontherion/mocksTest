@@ -28,7 +28,7 @@ app.get('/v1/pasos/:codigoPaso/pruebas/:urlImage', (req, res) => {
        "message": "consumeService#error",
        "service": "TollTransitDownloadController",
        "timestamp": new Date().toISOString(),
-       "xray_trace_id": "1-680fe6ad-0b9daa5067d3169e2f74080c",
+       "xray_trace_id": "1-680fe6ad-0b9daa5067d3169e2f74080c1",
        "status": 400,
        "headers": {
            "content-type": "application/json;charset=UTF-8",
