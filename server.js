@@ -13,7 +13,7 @@ const mockData = {
 };
 
     
-// Service endpoint
+// Service endpoint HOLA
 app.get('/v1/pasos/:codigoPaso/pruebas/:urlImage', (req, res) => {
   // Simulate a potential error (you can customize this based on your needs)
      const codigoPaso = req.params.codigoPaso;
